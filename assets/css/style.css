@@ -106,11 +106,15 @@ h2 {
 	--kalpurush: "kalpurush";
 }
 
-.flex-wrapper {
+.site {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	min-height: 100vh;
+}
+
+.site-content {
+	flex: 1;
 }
 
 /*Scroll Area*/
