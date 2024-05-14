@@ -322,7 +322,7 @@ h2 {
 }
 
 .header-horizontal-menu .menu-content li .sub-menu li:hover>a {
-	color: #fff;
+	color: #FF004C;
 }
 
 .header-horizontal-menu .menu-content li .sub-menu li .sub-menu {
@@ -447,6 +447,7 @@ h2 {
 	border-top: 1px solid #e5e5e5;
 }
 
+.mobile-main-menu .menu-content li.active a,
 .mobile-main-menu .menu-content li a:hover {
 	background-color: #ff004c;
 }
