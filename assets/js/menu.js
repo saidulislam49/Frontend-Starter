@@ -1,40 +1,40 @@
-$(function() {
-    
- 
-    
-        
+$(function () {
+
+
+
+
 
     //===== Sticky
-    
-    $(window).on('scroll', function(event) {    
+
+    $(window).on('scroll', function (event) {
         var scroll = $(window).scrollTop();
         if (scroll < 350) {
             $(".header-bottom").removeClass("sticky");
-        } else{
+        } else {
             $(".header-bottom").addClass("sticky");
         }
     });
-        
+
     //===== Mobile Menu
-    
-    $('.mobile-menu-open').on('click', function(){
+
+    $('.mobile-menu-open').on('click', function () {
         $('.mobile-off-canvas-menu').addClass('open')
         $('.overlay').addClass('open')
     });
-    
-    $('.close-mobile-menu').on('click', function(){
+
+    $('.close-mobile-menu').on('click', function () {
         $('.mobile-off-canvas-menu').removeClass('open')
         $('.overlay').removeClass('open')
     });
-    
-    $('.overlay').on('click', function(){
+
+    $('.overlay').on('click', function () {
         $('.mobile-off-canvas-menu').removeClass('open')
         $('.overlay').removeClass('open')
     });
-    
-    
-   
-    
+
+
+
+
     /*Variables*/
     var $offCanvasNav = $('.mobile-main-menu'),
         $offCanvasNavSubMenu = $offCanvasNav.find('.mega-sub-menu, .sub-menu, .submenu-item ');
@@ -46,7 +46,7 @@ $(function() {
     $offCanvasNavSubMenu.slideUp();
 
     /*Category Sub Menu Toggle*/
-    $offCanvasNav.on('click', 'li a, li .mobile-menu-expand, li .menu-title', function(e) {
+    $offCanvasNav.on('click', 'li a, li .mobile-menu-expand, li .menu-title', function (e) {
         var $this = $(this);
         if (($this.parent().attr('class').match(/\b(menu-item-has-children|has-children|has-sub-menu)\b/)) && ($this.attr('href') === '#' || $this.hasClass('mobile-menu-expand'))) {
             e.preventDefault();
@@ -63,5 +63,5 @@ $(function() {
     });
 
 
-    
+
 });
